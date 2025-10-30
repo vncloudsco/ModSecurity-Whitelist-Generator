@@ -74,7 +74,7 @@ export default function Home() {
         </div>
 
         {/* Main Content */}
-        <Tabs value={activeTab} className="w-full">
+        <Tabs className="w-full">
           <TabsList className="grid w-full grid-cols-3 mb-6">
             <TabsTrigger 
               active={activeTab === 'input'}
