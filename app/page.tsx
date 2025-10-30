@@ -102,7 +102,7 @@ export default function Home() {
           </TabsList>
 
           {/* Input Tab */}
-          <TabsContent value="input" className={activeTab === 'input' ? 'block' : 'hidden'}>
+          <TabsContent className={activeTab === 'input' ? 'block' : 'hidden'}>
             <Card>
               <CardHeader>
                 <CardTitle>{t.inputTitle}</CardTitle>
@@ -140,7 +140,7 @@ export default function Home() {
           </TabsContent>
 
           {/* Analysis Tab */}
-          <TabsContent value="analysis" className={activeTab === 'analysis' ? 'block' : 'hidden'}>
+          <TabsContent className={activeTab === 'analysis' ? 'block' : 'hidden'}>
             {parsedLog && (
               <Card>
                 <CardHeader>
@@ -188,7 +188,7 @@ export default function Home() {
           </TabsContent>
 
           {/* Rules Tab */}
-          <TabsContent value="rules" className={activeTab === 'rules' ? 'block' : 'hidden'}>
+          <TabsContent className={activeTab === 'rules' ? 'block' : 'hidden'}>
             <div className="space-y-4">
               <Card>
                 <CardHeader>
